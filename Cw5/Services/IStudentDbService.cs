@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace Cw5.Services
 {
-    interface IStudentDbService
+    public interface IStudentDbService
     {
         DTOs.Responses.ResponseState EnrollStudent(DTOs.Requests.Student studentRequest);
         DTOs.Responses.ResponseState PromoteStudents(DTOs.Requests.Promotion promotionRequest);
-        Model.Student getStudent(String index);
+        Model.Student getStudent(string index);
     }
 }
